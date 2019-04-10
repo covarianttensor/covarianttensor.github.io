@@ -9,6 +9,7 @@
         "currentshows" : {
             "title" : "Current Shows",
             "group" : [
+                { "organizationType" : "compilations", "id" : "coderradio"},
                 { "organizationType" : "compilations", "id" : "bsdnow"},
                 { "organizationType" : "compilations", "id" : "chooselinux"}
             ],
@@ -19,6 +20,13 @@
             "group" : [
                 { "organizationType" : "compilations", "id" : "bsdnowaudio"},
                 { "organizationType" : "compilations", "id" : "chooselinuxaudio"}
+            ],
+            "uniqueProperties" : {}
+        },
+        "coderradioshow" : {
+            "title" : "Coder Radio",
+            "group" : [
+                { "organizationType" : "content", "id" : "coderradio1"}
             ],
             "uniqueProperties" : {}
         },
@@ -71,6 +79,7 @@
         "mostrecentrow" : {
             "title" : "Most Recent",
             "group" : [
+                { "organizationType" : "content", "id" : "coderradio1"},
                 { "organizationType" : "content", "id" : "bsdnow3"},
                 { "organizationType" : "content", "id" : "chooselinux2"}
             ],
@@ -121,6 +130,18 @@
         }
     },
     "compilations" : {
+        "coderradio" : {
+            "containerType" : "videoshow",
+            "title" : "Coder Radio",
+            "description" : "A weekly talk show taking a pragmatic look at the art and business of Software Development and related technologies.",
+            "firstAired" : "2011-12-25",
+            "hdPosterUrl" : "https://assets.fireside.fm/file/fireside-images/podcasts/images/b/b44de5fa-47c1-4e94-bf9e-c72f8d1c8f5d/cover_medium.jpg",
+            "hdBackgroundImageUrl" : "pkg://images/assets/Solid_2a2a2a_1920x1080.png",
+            "collectionId" : "coderradioshow",
+            "uniqueProperties" : {
+                "itemDisplayMode" : "show"
+            }
+        },
         "bsdnow" : {
             "containerType" : "videoshow",
             "title" : "BSD Now",
@@ -218,6 +239,32 @@
             "uniqueProperties" : {
                 "itemDisplayMode" : "icon"
             }
+        },
+        "coderradio1" : {
+            "containerType" : "video",
+            "title" : "Self Driving Disaster",
+            "shortTitle" : "Coder Radio 352",
+            "description" : "Mike’s away so Chris joins Wes to discuss running your workstation from RAM, the disappointing realities of self driving cars, and handling the ups and downs of critical feedback.",
+            "shortDescription" : "Coder Radio 352!",
+            "releaseDate" : "April 9th, 2019",
+            "hdPosterUrl" : "https://www.jupiterbroadcasting.com/wp-content/uploads/2019/04/WP-CODER-350x196-0419-300x168.png",
+            "hdBackgroundImageUrl" : "pkg://images/assets/Solid_2a2a2a_1920x1080.png",
+            "url" : "http://201406.jb-dl.cdn.scaleengine.net/coderradio/2019/cr-0352.mp4",
+            "streamFormat" : "mp4",
+            "subtitleTracks" : [
+                {
+                    "Language" : "eng",
+                    "Description" : "English",
+                    "TrackName": "pkg:/source/CraigVenter.eng.srt"
+                }
+            ],
+            "extrainfo" : {
+                "hosts" : [
+                    "chrisfisher",
+                    "wespayne"
+                ]
+            },
+            "uniqueProperties" : {}
         },
         "bsdnow1" : {
             "containerType" : "video",
@@ -417,6 +464,12 @@
             "name" : "Chris Fisher",
             "portraitUrl" : "pkg://images/assets/chrisfisher.png",
             "bio"  : "Host and owner of Jupiter Broadcasting, with the best shows on Linux, Security, Privacy, Community, Development, News and Politics. Everyday's a holiday!"
+        },
+        "wespayne" : {
+            "containerType" : "person",
+            "name" : "Wes Payne",
+            "portraitUrl" : "https://assets.fireside.fm/file/fireside-images/podcasts/images/b/b44de5fa-47c1-4e94-bf9e-c72f8d1c8f5d/hosts/6/609039bd-12e1-4332-abc9-6e396a3635cd/avatar_small.jpg",
+            "bio"  : "Co-Host of Coder Radio"
         },
         "allanjude" : {
             "containerType" : "person",
