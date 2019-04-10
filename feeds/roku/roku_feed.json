@@ -268,6 +268,35 @@
               "itemDisplayMode" : "episode"
             }
         },
+        "coderradioaudio1" : {
+            "containerType" : "audio",
+            "title" : "Self Driving Disaster",
+            "shortTitle" : "Coder Radio 352",
+            "description" : "Mike’s away so Chris joins Wes to discuss running your workstation from RAM, the disappointing realities of self driving cars, and handling the ups and downs of critical feedback.",
+            "shortDescription" : "Coder Radio 352!",
+            "releaseDate" : "April 9th, 2019",
+            "hdPosterUrl" : "https://www.jupiterbroadcasting.com/wp-content/uploads/2019/04/WP-CODER-350x196-0419-300x168.png",
+            "hdBackgroundImageUrl" : "pkg://images/assets/Solid_2a2a2a_1920x1080.png",
+            "url" : "https://media.fireside.fm/file/fireside-audio/podcasts/audio/b/b44de5fa-47c1-4e94-bf9e-c72f8d1c8f5d/episodes/6/69987ed5-1a85-4706-a407-6023efddc8c2/69987ed5-1a85-4706-a407-6023efddc8c2.mp3",
+            "streamFormat" : "mp3",
+            "subtitleTracks" : [
+                {
+                    "Language" : "eng",
+                    "Description" : "English",
+                    "TrackName": "pkg:/source/CraigVenter.eng.srt"
+                }
+            ],
+            "extrainfo" : {
+                "hosts" : [
+                    "chrisfisher",
+                    "wespayne"
+                ]
+            },
+            "uniqueProperties" : {
+              "itemDisplayMode" : "episode",
+              "playbarColor" : "0x42f4f1ff"
+            }
+        },
         "bsdnow1" : {
             "containerType" : "video",
             "title" : "Timestamped Notes | BSD Now 290",
