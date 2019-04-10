@@ -28,7 +28,9 @@
             "group" : [
                 { "organizationType" : "content", "id" : "coderradio1"}
             ],
-            "uniqueProperties" : {}
+            "uniqueProperties" : {
+              "itemDisplayMode" : "episode"
+            }
         },
         "bsdnowshow" : {
             "title" : "BSD Now",
