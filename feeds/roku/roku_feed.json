@@ -88,6 +88,7 @@
         "mostrecentaudiorow" : {
             "title" : "Most Recent (Audio)",
             "group" : [
+                { "organizationType" : "content", "id" : "coderradioaudio1"},
                 { "organizationType" : "content", "id" : "bsdnowaudio3"},
                 { "organizationType" : "content", "id" : "bsdnowaudio2"},
                 { "organizationType" : "content", "id" : "chooselinuxaudio1"}
