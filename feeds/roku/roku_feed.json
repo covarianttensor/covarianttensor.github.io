@@ -28,9 +28,7 @@
             "group" : [
                 { "organizationType" : "content", "id" : "coderradio1"}
             ],
-            "uniqueProperties" : {
-              "itemDisplayMode" : "episode"
-            }
+            "uniqueProperties" : {}
         },
         "bsdnowshow" : {
             "title" : "BSD Now",
@@ -266,7 +264,9 @@
                     "wespayne"
                 ]
             },
-            "uniqueProperties" : {}
+            "uniqueProperties" : {
+              "itemDisplayMode" : "episode"
+            }
         },
         "bsdnow1" : {
             "containerType" : "video",
