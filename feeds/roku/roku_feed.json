@@ -23,6 +23,13 @@
             ],
             "uniqueProperties" : {}
         },
+        "classicjbshows" : {
+            "title" : "Classic Jupiter Broadcasting Shows",
+            "group" : [
+                { "organizationType" : "compilations", "id" : "linuxactionshow"}
+            ],
+            "uniqueProperties" : {}
+        },
         "coderradioshow" : {
             "title" : "Coder Radio",
             "group" : [
@@ -65,6 +72,13 @@
             ],
             "uniqueProperties" : {}
         },
+        "linuxactionshow" : {
+            "title" : "Linux Action Show",
+            "group" : [
+                { "organizationType" : "content", "id" : "linuxactionshow468"}
+            ],
+            "uniqueProperties" : {}
+        },
         "featuredrow" : {
             "title" : "Featured",
             "group" : [
@@ -101,7 +115,8 @@
                 { "organizationType" : "content", "id" : "livevideo1"},
                 { "organizationType" : "content", "id" : "liveaudio1"},
                 { "organizationType" : "libraries", "id" : "currentshows"},
-                { "organizationType" : "libraries", "id" : "currentpodcasts"}
+                { "organizationType" : "libraries", "id" : "currentpodcasts"},
+                { "organizationType" : "libraries", "id" : "classicjbshows"}
             ],
             "uniqueProperties" : {}
         }
@@ -125,6 +140,17 @@
             "hdPosterUrl" : "pkg://images/assets/Podcasts_375x375.png",
             "hdBackgroundImageUrl" : "pkg://images/assets/Solid_2a2a2a_1920x1080.png",
             "collectionId" : "currentpodcasts",
+            "uniqueProperties" : {
+                "itemDisplayMode" : "icon"
+            }
+        },
+        "classicjbshows" : {
+            "containerType" : "library",
+            "title" : "Classic Jupiter Broadcasting Shows",
+            "shortTitle" : "Classic JB Shows",
+            "hdPosterUrl" : "pkg://images/assets/CurrentShows_375x375.png",
+            "hdBackgroundImageUrl" : "pkg://images/assets/Solid_2a2a2a_1920x1080.png",
+            "collectionId" : "classicjbshows",
             "uniqueProperties" : {
                 "itemDisplayMode" : "icon"
             }
@@ -191,6 +217,18 @@
             "uniqueProperties" : {
                 "itemDisplayMode" : "show",
                 "playbarColor" : "0x41e510ff"
+            }
+        },
+        "linuxactionshow" : {
+            "containerType" : "videoshow",
+            "title" : "Linux Action Show",
+            "description" : "The worlds #1 Linux podcast. A weekly show that covers the best in the open source and Linux world. Get a solid dose of Linux, gadgets, howto, reviews, and news every week!",
+            "firstAired" : "2009-4-4",
+            "hdPosterUrl" : "https://covarianttensor.github.io/feeds/roku/img/linuxactionshow_375x375.jpg",
+            "hdBackgroundImageUrl" : "pkg://images/assets/chooselinux_1920x1080.jpg",
+            "collectionId" : "linuxactionshow",
+            "uniqueProperties" : {
+                "itemDisplayMode" : "show"
             }
         }
     },
@@ -488,6 +526,36 @@
                 "itemDisplayMode" : "episode",
                 "playbarColor" : "0x41e510ff"
             }
+        },
+        "linuxactionshow468" : {
+            "containerType" : "video",
+            "title" : "For the LAS Time | LAS 468",
+            "shortTitle" : "LAS 468",
+            "description" : "The big trends, favorite moments, audience questions & more, all live from the floor of LinuxFest Northwest 2017. It’s the final episode of the Linux Action Show!",
+            "shortDescription" : "LAS 468!",
+            "releaseDate" : " May 8, 2017",
+            "hdPosterUrl" : "https://www.jupiterbroadcasting.com/wp-content/uploads/2017/05/las468-v-300x178.jpg",
+            "hdBackgroundImageUrl" : "pkg://images/assets/bsdnow_1920x1080.jpg",
+            "url" : "http://201406.jb-dl.cdn.scaleengine.net/las/2017/linuxactionshowep468.mp4",
+            "streamFormat" : "mp4",
+            "subtitleTracks" : [
+                {
+                    "Language" : "eng",
+                    "Description" : "English",
+                    "TrackName": "pkg:/source/CraigVenter.eng.srt"
+                },
+                {
+                    "Language" : "spa",
+                    "Description" : "Español",
+                    "TrackName": "pkg:/source/CraigVenter.spa.srt"
+                }
+            ],
+            "extrainfo" : {
+                "hosts" : [
+                    "chrisfisher"
+                ]
+            },
+            "uniqueProperties" : {}
         }
     },
     "people" : {
