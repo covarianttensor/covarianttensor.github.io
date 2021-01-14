@@ -79,7 +79,7 @@
       },
       {
         "station_name" : "Christmas",
-        "station_list_text" : "The Christmas Channel",
+        "station_list_text" : "The Christmas Channel!!",
         "description" : "Your Holiday Favorites!  This channel is only active in November and December",
         "stream_pls_url" : "http://www.radiostorm.com/christmas.pls",
         "stream_type" : "aac",
