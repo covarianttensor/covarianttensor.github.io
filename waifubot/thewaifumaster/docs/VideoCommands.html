@@ -155,6 +155,10 @@
 <button id="filter_btn_XIANGLING" class="filter_btn" onclick="toggleFilterButton('filter_btn_XIANGLING', 'XIANGLING')"> XIANGLING</button>
 <button id="filter_btn_KONOSUBA" class="filter_btn" onclick="toggleFilterButton('filter_btn_KONOSUBA', 'KONOSUBA')"> KONOSUBA</button>
 <button id="filter_btn_WATSON" class="filter_btn" onclick="toggleFilterButton('filter_btn_WATSON', 'WATSON')"> WATSON</button>
+<button id="filter_btn_KAZUMA" class="filter_btn" onclick="toggleFilterButton('filter_btn_KAZUMA', 'KAZUMA')"> KAZUMA</button>
+<button id="filter_btn_MEGUMI" class="filter_btn" onclick="toggleFilterButton('filter_btn_MEGUMI', 'MEGUMI')"> MEGUMI</button>
+<button id="filter_btn_SIMPSONS" class="filter_btn" onclick="toggleFilterButton('filter_btn_SIMPSONS', 'SIMPSONS')"> SIMPSONS</button>
+<button id="filter_btn_HOMER" class="filter_btn" onclick="toggleFilterButton('filter_btn_HOMER', 'HOMER')"> HOMER</button>
 
                             </div>
                         </div><!--//section-block-->
@@ -200,6 +204,18 @@
 <a href="#" class="btn btn-blue btn-cta filterDiv show  MISC" onclick="copyText('$fbi')"><i class="fas fa-clipboard"></i> $fbi (45 sec.) | [VIDEO_EFFECTS] </a>
 <a href="#" class="btn btn-blue btn-cta filterDiv show  KONOSUBA" onclick="copyText('$konorip')"><i class="fas fa-clipboard"></i> $konorip (45 sec.) | [VIDEO_EFFECTS] </a>
 <a href="#" class="btn btn-blue btn-cta filterDiv show  HOLOLIVE KORONE" onclick="copyText('$koroneyouaredie')"><i class="fas fa-clipboard"></i> $koroneyouaredie (15 sec.) | [VIDEO_EFFECTS] </a>
+<a href="#" class="btn btn-blue btn-cta filterDiv show  HOLOLIVE KORONE" onclick="copyText('$eatingkoronesass')"><i class="fas fa-clipboard"></i> $eatingkoronesass (15 sec.) | [VIDEO_EFFECTS] </a>
+<a href="#" class="btn btn-blue btn-cta filterDiv show  KONOSUBA KAZUMA" onclick="copyText('$kazumareject')"><i class="fas fa-clipboard"></i> $kazumareject (60 sec.) | [VIDEO_EFFECTS] </a>
+<a href="#" class="btn btn-blue btn-cta filterDiv show  GTA" onclick="copyText('$missionpassed')"><i class="fas fa-clipboard"></i> $missionpassed (25 sec.) | [VIDEO_EFFECTS] </a>
+<a href="#" class="btn btn-blue btn-cta filterDiv show  MISC" onclick="copyText('$what')"><i class="fas fa-clipboard"></i> $what (30 sec.) | [VIDEO_EFFECTS] </a>
+<a href="#" class="btn btn-blue btn-cta filterDiv show  MISC" onclick="copyText('$demotivationalshia')"><i class="fas fa-clipboard"></i> $demotivationalshia (60 sec.) | [VIDEO_EFFECTS] </a>
+<a href="#" class="btn btn-blue btn-cta filterDiv show  JOJO" onclick="copyText('$jojoawaken')"><i class="fas fa-clipboard"></i> $jojoawaken (60 sec.) | [VIDEO_EFFECTS] </a>
+<a href="#" class="btn btn-blue btn-cta filterDiv show  HOLOLIVE MARINE" onclick="copyText('$marinehorror')"><i class="fas fa-clipboard"></i> $marinehorror (60 sec.) | [VIDEO_EFFECTS] </a>
+<a href="#" class="btn btn-blue btn-cta filterDiv show  HOLOLIVE PEKORA" onclick="copyText('$pekorahit')"><i class="fas fa-clipboard"></i> $pekorahit (25 sec.) | [VIDEO_EFFECTS] </a>
+<a href="#" class="btn btn-blue btn-cta filterDiv show  KONOSUBA MEGUMI" onclick="copyText('$megumiexplosion')"><i class="fas fa-clipboard"></i> $megumiexplosion (60 sec.) | [VIDEO_EFFECTS] </a>
+<a href="#" class="btn btn-blue btn-cta filterDiv show  SIMPSONS HOMER" onclick="copyText('$homeropensdoor')"><i class="fas fa-clipboard"></i> $homeropensdoor (15 sec.) | [VIDEO_EFFECTS] </a>
+<a href="#" class="btn btn-blue btn-cta filterDiv show  MISC" onclick="copyText('$ko')"><i class="fas fa-clipboard"></i> $ko (15 sec.) | [VIDEO_EFFECTS] </a>
+<a href="#" class="btn btn-blue btn-cta filterDiv show  HOLOLIVE KLEE" onclick="copyText('$kleeguns')"><i class="fas fa-clipboard"></i> $kleeguns (60 sec.) | [VIDEO_EFFECTS] </a>
 
                         </div><!--//section-block-->
                     </section><!--//doc-section-->
@@ -251,7 +267,7 @@
             return this;
         };
 
-        var buttonStates = { "all" : true, "HOLOLIVE" : true, "PEKORA" : true, "MISC" : true, "OLLIE" : true, "NINTENDO" : true, "NYANNERS" : true, "VTUBER" : true, "NENE" : true, "LUMI" : true, "FATE" : true, "ABBY" : true, "NERO" : true, "SHION" : true, "ALWAYSSUNNY" : true, "KORONE" : true, "YAKUZA" : true, "MIKO" : true, "TAMAMO" : true, "VEIBAE" : true, "MARINE" : true, "ARA" : true, "INA" : true, "GENSHIN" : true, "KEQING" : true, "DARKSOULS" : true, "COCO" : true, "LISA" : true, "KLEE" : true, "FISCHL" : true, "BARBARA" : true, "AMBER" : true, "LOFI" : true, "SMASH" : true, "SPIDERMAN" : true, "NOELLE" : true, "NINGGUANG" : true, "BEIDOU" : true, "PRINCESSCONNECT" : true, "MAMAKO" : true, "NONNONBIYORI" : true, "RENGE" : true, "GTA" : true, "MISSKOBAYASHI" : true, "KANNA" : true, "JOJO" : true, "EULA" : true, "FILTHYFRANK" : true, "XIANGLING" : true, "KONOSUBA" : true, "WATSON" : true };
+        var buttonStates = { "all" : true, "HOLOLIVE" : true, "PEKORA" : true, "MISC" : true, "OLLIE" : true, "NINTENDO" : true, "NYANNERS" : true, "VTUBER" : true, "NENE" : true, "LUMI" : true, "FATE" : true, "ABBY" : true, "NERO" : true, "SHION" : true, "ALWAYSSUNNY" : true, "KORONE" : true, "YAKUZA" : true, "MIKO" : true, "TAMAMO" : true, "VEIBAE" : true, "MARINE" : true, "ARA" : true, "INA" : true, "GENSHIN" : true, "KEQING" : true, "DARKSOULS" : true, "COCO" : true, "LISA" : true, "KLEE" : true, "FISCHL" : true, "BARBARA" : true, "AMBER" : true, "LOFI" : true, "SMASH" : true, "SPIDERMAN" : true, "NOELLE" : true, "NINGGUANG" : true, "BEIDOU" : true, "PRINCESSCONNECT" : true, "MAMAKO" : true, "NONNONBIYORI" : true, "RENGE" : true, "GTA" : true, "MISSKOBAYASHI" : true, "KANNA" : true, "JOJO" : true, "EULA" : true, "FILTHYFRANK" : true, "XIANGLING" : true, "KONOSUBA" : true, "WATSON" : true, "KAZUMA" : true, "MEGUMI" : true, "SIMPSONS" : true, "HOMER" : true };
         var filters = [];
 
         function toggleFilterButton(id, c) {
