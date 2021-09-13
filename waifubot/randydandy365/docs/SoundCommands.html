@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>RandyDandy365 - Sound Commands</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">    
+    <link rel="shortcut icon" href="../../../vendor/prettydocs/favicon.ico">  
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- FontAwesome JS -->
+    <script defer src="../../../vendor/prettydocs/assets/fontawesome/js/all.js"></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="../../../vendor/prettydocs/assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->    
+    <link rel="stylesheet" href="../../../vendor/prettydocs/assets/plugins/prism/prism.css">
+    <link rel="stylesheet" href="../../../vendor/prettydocs/assets/plugins/elegant_font/css/style.css">  
+      
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="../../../vendor/prettydocs/assets/css/styles.css">
+
+    <style>
+        .filterDiv {
+            display: none; /* Hidden by default */
+        }
+        
+        /* The "show" class is added to the filtered elements */
+        .show {
+            display: inline-block;
+        }
+        
+        /* Style the buttons */
+        .filter_btn {
+            border: none;
+            outline: none;
+            padding: 12px 16px;
+            background-color: #f1f1f1;
+            cursor: pointer;
+        }
+        
+        /* Add a light grey background on mouse-over */
+        .filter_btn:hover {
+            background-color: #ddd;
+        }
+
+        .filter_btn_all {
+            border: none;
+            outline: none;
+            padding: 12px 16px;
+            background-color: #f1f1f1;
+            cursor: pointer;
+        }
+
+        .filter_btn_all:hover {
+            background-color: #ddd;
+        }
+
+        /* Add a dark background to the active button */
+        .toggleon {
+            background-color: #666;
+            color: white;
+        }
+    </style>
+    
+</head> 
+
+<body class="body-green">
+
+    <div class="page-wrapper">
+        <!-- ******Header****** -->
+        <header id="header" class="header">
+            <div class="container">
+                <div class="branding">
+                    <h1 class="logo">
+                        <a href="index.html">
+                            <span aria-hidden="true" class="icon_documents_alt icon"></span>
+                            <span class="text-highlight">WaifuBot</span><span class="text-bold">Docs</span>
+                        </a>
+                    </h1>
+                    
+                </div><!--//branding-->
+                
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Sound Commands</li>
+                </ol>
+                
+                
+            </div><!--//container-->
+        </header><!--//header-->
+        <div class="doc-wrapper">
+            <div class="container">
+            
+                <div id="doc-header" class="doc-header text-center">
+                    <h1 class="doc-title"><i class="icon fa fa-volume-up"></i> Sound Commands Refrence List</h1>
+                    <div class="meta"><i class="far fa-clock"></i> Last updated: Monday, 13 September 2021</div>
+                </div><!--//doc-header-->
+
+                <div class="doc-body row">
+                    <section class="doc-section">
+                        <h2 class="section-title">Category Filters</h2>
+                        <div class="section-block">
+                            <div id="myBtnContainer">
+                                
+<button id="filter_btn_all" class="filter_btn_all" onclick="toggleFilterButton('filter_btn_all', 'all')"> Show all</button>
+
+                            </div>
+                        </div><!--//section-block-->
+                    </section>
+                 </div><!--//doc-body-->
+
+                <div class="doc-body row">
+                    <section id="commands-section" class="doc-section">
+                        <h2 class="section-title">Sound Commands For RandyDandy365</h2>
+                        <div class="section-block">
+                            
+
+                        </div><!--//section-block-->
+                    </section><!--//doc-section-->
+                </div><!--//doc-body-->
+
+            </div><!--//container-->
+        </div><!--//doc-wrapper-->
+        
+        
+        
+    </div><!--//page-wrapper-->
+
+    
+    <footer id="footer" class="footer text-center">
+        <div class="container">
+            WaifuBot (c) 2021
+        </div><!--//container-->
+    </footer><!--//footer-->
+     
+    <!-- Main Javascript -->          
+    <script type="text/javascript" src="../../../vendor/prettydocs/assets/plugins/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../../../vendor/prettydocs/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../../vendor/prettydocs/assets/plugins/prism/prism.js"></script>    
+    <script type="text/javascript" src="../../../vendor/prettydocs/assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>      
+    <script type="text/javascript" src="../../../vendor/prettydocs/assets/plugins/stickyfill/dist/stickyfill.min.js"></script>                                                             
+    <script type="text/javascript" src="../../../vendor/prettydocs/assets/js/main.js"></script>
+
+    <script>
+        function copyText(command) {
+            const el = document.createElement('textarea');
+            el.value = command;
+            el.setAttribute('readonly', '');
+            el.style.position = 'absolute';
+            el.style.left = '-9999px';
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+        }
+
+        Array.prototype.remove = function() {
+            var what, a = arguments, L = a.length, ax;
+            while (L && this.length) {
+                what = a[--L];
+                while ((ax = this.indexOf(what)) !== -1) {
+                    this.splice(ax, 1);
+                }
+            }
+            return this;
+        };
+
+        var buttonStates = { "all" : true };
+        var filters = [];
+
+        function toggleFilterButton(id, c) {
+            var btn = document.getElementById(id);
+
+            if(c === "all") {
+                x = document.getElementsByClassName("filter_btn");
+                for (i = 0; i < x.length; i++) {
+                    w3RemoveClass(x[i], "toggleon");
+                }
+
+                filters = [];
+                filterMultiSelection();
+                if(buttonStates[c]){
+                    buttonStates[c] = false;
+                    w3AddClass(btn, "toggleon");
+                }
+                return;
+            }
+            
+            if(buttonStates[c]) {
+                buttonStates[c] = false;
+                w3AddClass(btn, "toggleon");
+                filters.push(c);
+                filterMultiSelection();
+            } else {
+                buttonStates[c] = true;
+                w3RemoveClass(btn, "toggleon");
+                filters.remove(c);
+                filterMultiSelection();
+            }
+
+            buttonStates["all"] = true;
+            w3RemoveClass(document.getElementById("filter_btn_all"), "toggleon");
+        }
+
+        function filterMultiSelection() {
+            var x, i, j;
+            x = document.getElementsByClassName("filterDiv");
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                let filterMatchCount = 0;
+                for (j = 0; j < filters.length; j++) {
+                    if(x[i].className.indexOf(filters[j]) > -1) filterMatchCount += 1;
+                }
+                if (filterMatchCount === filters.length) w3AddClass(x[i], "show");
+            }
+        }
+
+        // Show filtered elements
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        // Hide elements that are not selected
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+    </script>
+    
+</body>
+</html> 
+
