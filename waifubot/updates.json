@@ -4,9 +4,9 @@
     "YEAR" : 2021,
     "MONTH" : 10,
     "DAY" : 10,
-    "BUILD" : 2
+    "BUILD" : 3
    },
-   "url" : "https://drive.google.com/file/d/1TvDH0AjMgoQ_ofN8QjjhEAN0WY0Y2kR-/view?usp=sharing",
-   "notes" : "Ver. (2021.10.10.2):\n* Made failing silently optional with trigger patterns. \n\nVer. (2021.10.10.1):\n* Added command trigger patterns.\n* Made commands searchable.\n* Added new data import feature.\n* Effect cooldowns have been extended to 31 days."
+   "url" : "https://drive.google.com/file/d/1MzX_-d584Nb0PcOwUFHj4HaPfB-oS9mL/view?usp=sharing",
+   "notes" : "Ver. (2021.10.10.3):\n* Made failing silently optional with trigger patterns. \n\nVer. (2021.10.10.1):\n* Added command trigger patterns.\n* Made commands searchable.\n* Added new data import feature.\n* Effect cooldowns have been extended to 31 days."
   }
 }
