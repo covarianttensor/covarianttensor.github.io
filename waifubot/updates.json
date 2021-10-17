@@ -3,11 +3,11 @@
     "version" : {
     "YEAR" : 2021,
     "MONTH" : 10,
-    "DAY" : 12,
+    "DAY" : 16,
     "BUILD" : 1
    },
-   "version_number": "2021.10.12.1",
-   "url" : "https://drive.google.com/file/d/1qNRLqlCuZf00pOIoHAAeT747pPKliygN/view?usp=sharing",
-   "notes" : "Ver. (2021.10.12.1):\n* Fixed data importer.\n* Fixed issue with trigger patterns."
+   "version_number": "2021.10.16.1",
+   "url" : "https://drive.google.com/file/d/1NDLvSuPExLARPGpfkBdleMFp1_Lx8-CY/view?usp=sharing",
+   "notes" : "Ver. (2021.10.16.1):\n* Fixed a bug where the sound player did not release file resources which prevented file deletion.\n\nVer. (2021.10.12.1):\n* Fixed data importer.\n* Fixed issue with trigger patterns."
   }
 }
