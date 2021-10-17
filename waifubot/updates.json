@@ -4,10 +4,10 @@
     "YEAR" : 2021,
     "MONTH" : 10,
     "DAY" : 17,
-    "BUILD" : 3
+    "BUILD" : 4
    },
-   "version_number": "2021.10.17.3",
-   "url" : "https://drive.google.com/file/d/14JPe4JZJnsh1r8gWqcO9I_uLwRS6OJmM/view?usp=sharing",
-   "notes" : "Ver. (2021.10.17.3):\n* Disabled caching in web client.\n\nVer. (2021.10.16.1):\n* Fixed a bug where the sound player did not release file resources which prevented file deletion.\n\nVer. (2021.10.12.1):\n* Fixed data importer.\n* Fixed issue with trigger patterns."
+   "version_number": "2021.10.17.4",
+   "url" : "https://drive.google.com/file/d/1FDMLZB1b3DlwCm78WeolHvLt5Xjvs1O2/view?usp=sharing",
+   "notes" : "Ver. (2021.10.17.4):\n* Disabled caching in web client.\n\nVer. (2021.10.16.1):\n* Fixed a bug where the sound player did not release file resources which prevented file deletion.\n\nVer. (2021.10.12.1):\n* Fixed data importer.\n* Fixed issue with trigger patterns."
   }
 }
