@@ -113,6 +113,7 @@
 <button id="filter_btn_AMONGUS" class="filter_btn" onclick="toggleFilterButton('filter_btn_AMONGUS', 'AMONGUS')"> AMONGUS</button>
 <button id="filter_btn_ANIME" class="filter_btn" onclick="toggleFilterButton('filter_btn_ANIME', 'ANIME')"> ANIME</button>
 <button id="filter_btn_ARA" class="filter_btn" onclick="toggleFilterButton('filter_btn_ARA', 'ARA')"> ARA</button>
+<button id="filter_btn_AVGN" class="filter_btn" onclick="toggleFilterButton('filter_btn_AVGN', 'AVGN')"> AVGN</button>
 <button id="filter_btn_AYAME" class="filter_btn" onclick="toggleFilterButton('filter_btn_AYAME', 'AYAME')"> AYAME</button>
 <button id="filter_btn_BARBARA" class="filter_btn" onclick="toggleFilterButton('filter_btn_BARBARA', 'BARBARA')"> BARBARA</button>
 <button id="filter_btn_BEIDOU" class="filter_btn" onclick="toggleFilterButton('filter_btn_BEIDOU', 'BEIDOU')"> BEIDOU</button>
@@ -169,6 +170,7 @@
 <button id="filter_btn_NYANNERS" class="filter_btn" onclick="toggleFilterButton('filter_btn_NYANNERS', 'NYANNERS')"> NYANNERS</button>
 <button id="filter_btn_OKAYU" class="filter_btn" onclick="toggleFilterButton('filter_btn_OKAYU', 'OKAYU')"> OKAYU</button>
 <button id="filter_btn_OLLIE" class="filter_btn" onclick="toggleFilterButton('filter_btn_OLLIE', 'OLLIE')"> OLLIE</button>
+<button id="filter_btn_ONEPIECE" class="filter_btn" onclick="toggleFilterButton('filter_btn_ONEPIECE', 'ONEPIECE')"> ONEPIECE</button>
 <button id="filter_btn_PAIMON" class="filter_btn" onclick="toggleFilterButton('filter_btn_PAIMON', 'PAIMON')"> PAIMON</button>
 <button id="filter_btn_PEKORA" class="filter_btn" onclick="toggleFilterButton('filter_btn_PEKORA', 'PEKORA')"> PEKORA</button>
 <button id="filter_btn_PERSONA4" class="filter_btn" onclick="toggleFilterButton('filter_btn_PERSONA4', 'PERSONA4')"> PERSONA4</button>
@@ -365,6 +367,13 @@
 <a href="#" class="btn btn-blue btn-cta filterDiv show  MISC" onclick="copyText('$lemmein')"><i class="fas fa-clipboard"></i> $lemmein (15 sec.) | [VIDEO_EFFECTS] </a>
 <a href="#" class="btn btn-blue btn-cta filterDiv show  MISC" onclick="copyText('$lemmeout')"><i class="fas fa-clipboard"></i> $lemmeout (15 sec.) | [VIDEO_EFFECTS] </a>
 <a href="#" class="btn btn-blue btn-cta filterDiv show  MISC" onclick="copyText('$losingit')"><i class="fas fa-clipboard"></i> $losingit (15 sec.) | [VIDEO_EFFECTS] </a>
+<a href="#" class="btn btn-blue btn-cta filterDiv show  MISC" onclick="copyText('$maxmad2')"><i class="fas fa-clipboard"></i> $maxmad2 (15 sec.) | [VIDEO_EFFECTS] </a>
+<a href="#" class="btn btn-blue btn-cta filterDiv show  MISC" onclick="copyText('$nonsense')"><i class="fas fa-clipboard"></i> $nonsense (15 sec.) | [VIDEO_EFFECTS] </a>
+<a href="#" class="btn btn-blue btn-cta filterDiv show  PERSONA5" onclick="copyText('$persona5')"><i class="fas fa-clipboard"></i> $persona5 (15 sec.) | [VIDEO_EFFECTS] </a>
+<a href="#" class="btn btn-blue btn-cta filterDiv show  MISC" onclick="copyText('$pop')"><i class="fas fa-clipboard"></i> $pop (15 sec.) | [VIDEO_EFFECTS] </a>
+<a href="#" class="btn btn-blue btn-cta filterDiv show  MISC" onclick="copyText('$pulpconfused')"><i class="fas fa-clipboard"></i> $pulpconfused (15 sec.) | [VIDEO_EFFECTS] </a>
+<a href="#" class="btn btn-blue btn-cta filterDiv show  ONEPIECE" onclick="copyText('$tobecontinued')"><i class="fas fa-clipboard"></i> $tobecontinued (15 sec.) | [VIDEO_EFFECTS] </a>
+<a href="#" class="btn btn-blue btn-cta filterDiv show  AVGN" onclick="copyText('$sometunes')"><i class="fas fa-clipboard"></i> $sometunes (15 sec.) | [VIDEO_EFFECTS] </a>
 
                         </div><!--//section-block-->
                     </section><!--//doc-section-->
@@ -416,7 +425,7 @@
             return this;
         };
 
-        var buttonStates = { "all" : true, "ABBY" : true, "AETHER" : true, "AIR88" : true, "ALWAYSSUNNY" : true, "AMBER" : true, "AMONGUS" : true, "ANIME" : true, "ARA" : true, "AYAME" : true, "BARBARA" : true, "BEIDOU" : true, "BIRB" : true, "BONK" : true, "BOTW" : true, "BRUH" : true, "CASTLEVANIA" : true, "CHRONOTRIGGER" : true, "COCO" : true, "DARKSOULS" : true, "DMC" : true, "EULA" : true, "FARMGO" : true, "FATE" : true, "FILTHYFRANK" : true, "FISCHL" : true, "FUBUKI" : true, "GANYU" : true, "GENSHIN" : true, "GTA" : true, "GUNS" : true, "HAACHAMA" : true, "HOLOLIVE" : true, "HOMER" : true, "INA" : true, "JOJO" : true, "JONTRON" : true, "KANNA" : true, "KAZUMA" : true, "KEQING" : true, "KLEE" : true, "KONOSUBA" : true, "KORONE" : true, "LINK" : true, "LISA" : true, "LOFI" : true, "LUMI" : true, "MAMAKO" : true, "MARINE" : true, "MEGAMAN" : true, "MEGUMI" : true, "MIKO" : true, "MISC" : true, "MISSKOBAYASHI" : true, "MRKRABS" : true, "NENE" : true, "NERO" : true, "NIJISANJI" : true, "NINGGUANG" : true, "NINTENDO" : true, "NOELLE" : true, "NONNONBIYORI" : true, "NYANNERS" : true, "OKAYU" : true, "OLLIE" : true, "PAIMON" : true, "PEKORA" : true, "PERSONA4" : true, "PERSONA5" : true, "PETRA" : true, "PRINCESSCONNECT" : true, "REM" : true, "RENGE" : true, "REZERO" : true, "RICK" : true, "SANS" : true, "SHION" : true, "SIMPSONS" : true, "SMASH" : true, "SONIC" : true, "SPIDERMAN" : true, "SPONGEBOB" : true, "TAMAMO" : true, "VEIBAE" : true, "VTUBER" : true, "WALKURE" : true, "WATAMEN" : true, "WATATEN" : true, "WATSON" : true, "XIANGLING" : true, "YAGOO" : true, "YAKUZA" : true, "ZELDA" : true };
+        var buttonStates = { "all" : true, "ABBY" : true, "AETHER" : true, "AIR88" : true, "ALWAYSSUNNY" : true, "AMBER" : true, "AMONGUS" : true, "ANIME" : true, "ARA" : true, "AVGN" : true, "AYAME" : true, "BARBARA" : true, "BEIDOU" : true, "BIRB" : true, "BONK" : true, "BOTW" : true, "BRUH" : true, "CASTLEVANIA" : true, "CHRONOTRIGGER" : true, "COCO" : true, "DARKSOULS" : true, "DMC" : true, "EULA" : true, "FARMGO" : true, "FATE" : true, "FILTHYFRANK" : true, "FISCHL" : true, "FUBUKI" : true, "GANYU" : true, "GENSHIN" : true, "GTA" : true, "GUNS" : true, "HAACHAMA" : true, "HOLOLIVE" : true, "HOMER" : true, "INA" : true, "JOJO" : true, "JONTRON" : true, "KANNA" : true, "KAZUMA" : true, "KEQING" : true, "KLEE" : true, "KONOSUBA" : true, "KORONE" : true, "LINK" : true, "LISA" : true, "LOFI" : true, "LUMI" : true, "MAMAKO" : true, "MARINE" : true, "MEGAMAN" : true, "MEGUMI" : true, "MIKO" : true, "MISC" : true, "MISSKOBAYASHI" : true, "MRKRABS" : true, "NENE" : true, "NERO" : true, "NIJISANJI" : true, "NINGGUANG" : true, "NINTENDO" : true, "NOELLE" : true, "NONNONBIYORI" : true, "NYANNERS" : true, "OKAYU" : true, "OLLIE" : true, "ONEPIECE" : true, "PAIMON" : true, "PEKORA" : true, "PERSONA4" : true, "PERSONA5" : true, "PETRA" : true, "PRINCESSCONNECT" : true, "REM" : true, "RENGE" : true, "REZERO" : true, "RICK" : true, "SANS" : true, "SHION" : true, "SIMPSONS" : true, "SMASH" : true, "SONIC" : true, "SPIDERMAN" : true, "SPONGEBOB" : true, "TAMAMO" : true, "VEIBAE" : true, "VTUBER" : true, "WALKURE" : true, "WATAMEN" : true, "WATATEN" : true, "WATSON" : true, "XIANGLING" : true, "YAGOO" : true, "YAKUZA" : true, "ZELDA" : true };
         var filters = [];
 
         function toggleFilterButton(id, c) {
