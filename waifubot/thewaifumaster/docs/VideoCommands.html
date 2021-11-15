@@ -95,7 +95,7 @@
             
                 <div id="doc-header" class="doc-header text-center">
                     <h1 class="doc-title"><i class="icon fa fa-volume-up"></i> Video Commands Refrence List</h1>
-                    <div class="meta"><i class="far fa-clock"></i> Last updated: Friday, 12 November 2021</div>
+                    <div class="meta"><i class="far fa-clock"></i> Last updated: Sunday, 14 November 2021</div>
                 </div><!--//doc-header-->
 
                 <div class="doc-body row">
@@ -163,6 +163,7 @@
 <button id="filter_btn_MISC" class="filter_btn" onclick="toggleFilterButton('filter_btn_MISC', 'MISC')"> MISC</button>
 <button id="filter_btn_MISSKOBAYASHI" class="filter_btn" onclick="toggleFilterButton('filter_btn_MISSKOBAYASHI', 'MISSKOBAYASHI')"> MISSKOBAYASHI</button>
 <button id="filter_btn_MRKRABS" class="filter_btn" onclick="toggleFilterButton('filter_btn_MRKRABS', 'MRKRABS')"> MRKRABS</button>
+<button id="filter_btn_MYTHRA" class="filter_btn" onclick="toggleFilterButton('filter_btn_MYTHRA', 'MYTHRA')"> MYTHRA</button>
 <button id="filter_btn_NENE" class="filter_btn" onclick="toggleFilterButton('filter_btn_NENE', 'NENE')"> NENE</button>
 <button id="filter_btn_NERO" class="filter_btn" onclick="toggleFilterButton('filter_btn_NERO', 'NERO')"> NERO</button>
 <button id="filter_btn_NIJISANJI" class="filter_btn" onclick="toggleFilterButton('filter_btn_NIJISANJI', 'NIJISANJI')"> NIJISANJI</button>
@@ -174,6 +175,7 @@
 <button id="filter_btn_OKAYU" class="filter_btn" onclick="toggleFilterButton('filter_btn_OKAYU', 'OKAYU')"> OKAYU</button>
 <button id="filter_btn_OLLIE" class="filter_btn" onclick="toggleFilterButton('filter_btn_OLLIE', 'OLLIE')"> OLLIE</button>
 <button id="filter_btn_ONEPIECE" class="filter_btn" onclick="toggleFilterButton('filter_btn_ONEPIECE', 'ONEPIECE')"> ONEPIECE</button>
+<button id="filter_btn_PADORU" class="filter_btn" onclick="toggleFilterButton('filter_btn_PADORU', 'PADORU')"> PADORU</button>
 <button id="filter_btn_PAIMON" class="filter_btn" onclick="toggleFilterButton('filter_btn_PAIMON', 'PAIMON')"> PAIMON</button>
 <button id="filter_btn_PEKORA" class="filter_btn" onclick="toggleFilterButton('filter_btn_PEKORA', 'PEKORA')"> PEKORA</button>
 <button id="filter_btn_PERSONA4" class="filter_btn" onclick="toggleFilterButton('filter_btn_PERSONA4', 'PERSONA4')"> PERSONA4</button>
@@ -388,6 +390,11 @@
 <a href="#" class="btn btn-blue btn-cta filterDiv show  ANHKA" onclick="copyText('$anhka_loop_right')"><i class="fas fa-clipboard"></i> $anhka_loop_right (5 sec.) | [STREAM_EFFECTS] </a>
 <a href="#" class="btn btn-blue btn-cta filterDiv show  ANHKA" onclick="copyText('$anhka_loop_small_left')"><i class="fas fa-clipboard"></i> $anhka_loop_small_left (5 sec.) | [STREAM_EFFECTS] </a>
 <a href="#" class="btn btn-blue btn-cta filterDiv show  ANHKA" onclick="copyText('$anhka_loop_small_right')"><i class="fas fa-clipboard"></i> $anhka_loop_small_right (5 sec.) | [STREAM_EFFECTS] </a>
+<a href="#" class="btn btn-blue btn-cta filterDiv show  ANHKA" onclick="copyText('$zone_anhka')"><i class="fas fa-clipboard"></i> $zone_anhka (1 sec.) | [STREAM_EFFECTS] </a>
+<a href="#" class="btn btn-blue btn-cta filterDiv show  ANHKA" onclick="copyText('$zone_anhka2')"><i class="fas fa-clipboard"></i> $zone_anhka2 (15 sec.) | [STREAM_EFFECTS] </a>
+<a href="#" class="btn btn-blue btn-cta filterDiv show  FATE PADORU NERO" onclick="copyText('$padoru')"><i class="fas fa-clipboard"></i> $padoru (15 sec.) | [VIDEO_EFFECTS] </a>
+<a href="#" class="btn btn-blue btn-cta filterDiv show  FATE PADORU NERO" onclick="copyText('$padoruiscoming')"><i class="fas fa-clipboard"></i> $padoruiscoming (15 sec.) | [VIDEO_EFFECTS] </a>
+<a href="#" class="btn btn-blue btn-cta filterDiv show  FATE PADORU NERO" onclick="copyText('$padoru2')"><i class="fas fa-clipboard"></i> $padoru2 (15 sec.) | [VIDEO_EFFECTS] </a>
 
                         </div><!--//section-block-->
                     </section><!--//doc-section-->
@@ -439,7 +446,7 @@
             return this;
         };
 
-        var buttonStates = { "all" : true, "ABBY" : true, "AETHER" : true, "AIR88" : true, "ALWAYSSUNNY" : true, "AMBER" : true, "AMONGUS" : true, "ANHKA" : true, "ANIME" : true, "ARA" : true, "AVGN" : true, "AYAME" : true, "BARBARA" : true, "BEIDOU" : true, "BIRB" : true, "BONK" : true, "BOTW" : true, "BRUH" : true, "CASTLEVANIA" : true, "CHRONOTRIGGER" : true, "COCO" : true, "DARKSOULS" : true, "DMC" : true, "DUALIPA" : true, "EULA" : true, "FARMGO" : true, "FATE" : true, "FILTHYFRANK" : true, "FISCHL" : true, "FUBUKI" : true, "GANYU" : true, "GENSHIN" : true, "GTA" : true, "GUNS" : true, "HAACHAMA" : true, "HOLOLIVE" : true, "HOMER" : true, "INA" : true, "JOJO" : true, "JONTRON" : true, "KANNA" : true, "KAZUMA" : true, "KEQING" : true, "KLEE" : true, "KONOSUBA" : true, "KORONE" : true, "KSON" : true, "LINK" : true, "LISA" : true, "LOFI" : true, "LUMI" : true, "MAMAKO" : true, "MARINE" : true, "MEGAMAN" : true, "MEGUMI" : true, "MIKO" : true, "MISC" : true, "MISSKOBAYASHI" : true, "MRKRABS" : true, "NENE" : true, "NERO" : true, "NIJISANJI" : true, "NINGGUANG" : true, "NINTENDO" : true, "NOELLE" : true, "NONNONBIYORI" : true, "NYANNERS" : true, "OKAYU" : true, "OLLIE" : true, "ONEPIECE" : true, "PAIMON" : true, "PEKORA" : true, "PERSONA4" : true, "PERSONA5" : true, "PETRA" : true, "PRINCESSCONNECT" : true, "REM" : true, "RENGE" : true, "REZERO" : true, "RICK" : true, "SANS" : true, "SHION" : true, "SIMPSONS" : true, "SMASH" : true, "SONIC" : true, "SPIDERMAN" : true, "SPONGEBOB" : true, "TAMAMO" : true, "VEIBAE" : true, "VTUBE" : true, "VTUBER" : true, "WALKURE" : true, "WATAMEN" : true, "WATATEN" : true, "WATSON" : true, "XIANGLING" : true, "YAGOO" : true, "YAKUZA" : true, "ZELDA" : true };
+        var buttonStates = { "all" : true, "ABBY" : true, "AETHER" : true, "AIR88" : true, "ALWAYSSUNNY" : true, "AMBER" : true, "AMONGUS" : true, "ANHKA" : true, "ANIME" : true, "ARA" : true, "AVGN" : true, "AYAME" : true, "BARBARA" : true, "BEIDOU" : true, "BIRB" : true, "BONK" : true, "BOTW" : true, "BRUH" : true, "CASTLEVANIA" : true, "CHRONOTRIGGER" : true, "COCO" : true, "DARKSOULS" : true, "DMC" : true, "DUALIPA" : true, "EULA" : true, "FARMGO" : true, "FATE" : true, "FILTHYFRANK" : true, "FISCHL" : true, "FUBUKI" : true, "GANYU" : true, "GENSHIN" : true, "GTA" : true, "GUNS" : true, "HAACHAMA" : true, "HOLOLIVE" : true, "HOMER" : true, "INA" : true, "JOJO" : true, "JONTRON" : true, "KANNA" : true, "KAZUMA" : true, "KEQING" : true, "KLEE" : true, "KONOSUBA" : true, "KORONE" : true, "KSON" : true, "LINK" : true, "LISA" : true, "LOFI" : true, "LUMI" : true, "MAMAKO" : true, "MARINE" : true, "MEGAMAN" : true, "MEGUMI" : true, "MIKO" : true, "MISC" : true, "MISSKOBAYASHI" : true, "MRKRABS" : true, "MYTHRA" : true, "NENE" : true, "NERO" : true, "NIJISANJI" : true, "NINGGUANG" : true, "NINTENDO" : true, "NOELLE" : true, "NONNONBIYORI" : true, "NYANNERS" : true, "OKAYU" : true, "OLLIE" : true, "ONEPIECE" : true, "PADORU" : true, "PAIMON" : true, "PEKORA" : true, "PERSONA4" : true, "PERSONA5" : true, "PETRA" : true, "PRINCESSCONNECT" : true, "REM" : true, "RENGE" : true, "REZERO" : true, "RICK" : true, "SANS" : true, "SHION" : true, "SIMPSONS" : true, "SMASH" : true, "SONIC" : true, "SPIDERMAN" : true, "SPONGEBOB" : true, "TAMAMO" : true, "VEIBAE" : true, "VTUBE" : true, "VTUBER" : true, "WALKURE" : true, "WATAMEN" : true, "WATATEN" : true, "WATSON" : true, "XIANGLING" : true, "YAGOO" : true, "YAKUZA" : true, "ZELDA" : true };
         var filters = [];
 
         function toggleFilterButton(id, c) {
