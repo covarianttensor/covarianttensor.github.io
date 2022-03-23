@@ -95,7 +95,7 @@
             
                 <div id="doc-header" class="doc-header text-center">
                     <h1 class="doc-title"><i class="icon fa fa-volume-up"></i> Video Commands Refrence List</h1>
-                    <div class="meta"><i class="far fa-clock"></i> Last updated: Friday, 04 February 2022</div>
+                    <div class="meta"><i class="far fa-clock"></i> Last updated: Tuesday, 22 March 2022</div>
                 </div><!--//doc-header-->
 
                 <div class="doc-body row">
@@ -202,6 +202,7 @@
 <button id="filter_btn_SONIC" class="filter_btn" onclick="toggleFilterButton('filter_btn_SONIC', 'SONIC')"> SONIC</button>
 <button id="filter_btn_SPIDERMAN" class="filter_btn" onclick="toggleFilterButton('filter_btn_SPIDERMAN', 'SPIDERMAN')"> SPIDERMAN</button>
 <button id="filter_btn_SPONGEBOB" class="filter_btn" onclick="toggleFilterButton('filter_btn_SPONGEBOB', 'SPONGEBOB')"> SPONGEBOB</button>
+<button id="filter_btn_SUS" class="filter_btn" onclick="toggleFilterButton('filter_btn_SUS', 'SUS')"> SUS</button>
 <button id="filter_btn_TAMAMO" class="filter_btn" onclick="toggleFilterButton('filter_btn_TAMAMO', 'TAMAMO')"> TAMAMO</button>
 <button id="filter_btn_VEIBAE" class="filter_btn" onclick="toggleFilterButton('filter_btn_VEIBAE', 'VEIBAE')"> VEIBAE</button>
 <button id="filter_btn_VTUBE" class="filter_btn" onclick="toggleFilterButton('filter_btn_VTUBE', 'VTUBE')"> VTUBE</button>
@@ -415,6 +416,12 @@
 <a href="#" class="btn btn-blue btn-cta filterDiv show  SMILINGFRIENDS" onclick="copyText('$lookpim')"><i class="fas fa-clipboard"></i> $lookpim (30 sec.) | [VIDEO_EFFECTS] </a>
 <a href="#" class="btn btn-blue btn-cta filterDiv show  SPONGEBOB" onclick="copyText('$spongebobwatchingtv2')"><i class="fas fa-clipboard"></i> $spongebobwatchingtv2 (30 sec.) | [VIDEO_EFFECTS] </a>
 <a href="#" class="btn btn-blue btn-cta filterDiv show  NENE" onclick="copyText('$nenefart')"><i class="fas fa-clipboard"></i> $nenefart (15 sec.) | [VIDEO_EFFECTS] </a>
+<a href="#" class="btn btn-blue btn-cta filterDiv show  KORONE HOLOLIVE" onclick="copyText('$koronehotgirl')"><i class="fas fa-clipboard"></i> $koronehotgirl (15 sec.) | [VIDEO_EFFECTS] </a>
+<a href="#" class="btn btn-blue btn-cta filterDiv show  HOLOLIVE HAACHAMA" onclick="copyText('$haachamaannoy')"><i class="fas fa-clipboard"></i> $haachamaannoy (60 sec.) | [VIDEO_EFFECTS] </a>
+<a href="#" class="btn btn-blue btn-cta filterDiv show  SUS" onclick="copyText('$segasus')"><i class="fas fa-clipboard"></i> $segasus (1 sec.) | [VIDEO_EFFECTS] </a>
+<a href="#" class="btn btn-blue btn-cta filterDiv show  HOLOLIVE KORONE" onclick="copyText('$koronenotbossenemyattack')"><i class="fas fa-clipboard"></i> $koronenotbossenemyattack (30 sec.) | [VIDEO_EFFECTS] </a>
+<a href="#" class="btn btn-blue btn-cta filterDiv show  HOLOLIVE KORONE" onclick="copyText('$koroneplzpower')"><i class="fas fa-clipboard"></i> $koroneplzpower (15 sec.) | [VIDEO_EFFECTS] </a>
+<a href="#" class="btn btn-blue btn-cta filterDiv show  HOLOLIVE KORONE" onclick="copyText('$koronekillyou')"><i class="fas fa-clipboard"></i> $koronekillyou (15 sec.) | [VIDEO_EFFECTS] </a>
 
                         </div><!--//section-block-->
                     </section><!--//doc-section-->
@@ -466,7 +473,7 @@
             return this;
         };
 
-        var buttonStates = { "all" : true, "ABBY" : true, "AETHER" : true, "AIR88" : true, "ALWAYSSUNNY" : true, "AMBER" : true, "AMONGUS" : true, "ANHKA" : true, "ANIME" : true, "ARA" : true, "AVGN" : true, "AYAME" : true, "BARBARA" : true, "BEIDOU" : true, "BIRB" : true, "BONK" : true, "BOTW" : true, "BRUH" : true, "CASTLEVANIA" : true, "CHRONOTRIGGER" : true, "COCO" : true, "DARKSOULS" : true, "DMC" : true, "DUALIPA" : true, "EULA" : true, "FARMGO" : true, "FATE" : true, "FILTHYFRANK" : true, "FISCHL" : true, "FUBUKI" : true, "GANYU" : true, "GENSHIN" : true, "GTA" : true, "GUNS" : true, "HAACHAMA" : true, "HOLOLIVE" : true, "HOMER" : true, "HONKAIIMPACT" : true, "HORNI" : true, "INA" : true, "JOJO" : true, "JONTRON" : true, "KANNA" : true, "KAZUMA" : true, "KEQING" : true, "KLEE" : true, "KONOSUBA" : true, "KORONE" : true, "KSON" : true, "LILJON" : true, "LINK" : true, "LISA" : true, "LOFI" : true, "LUMI" : true, "LURK" : true, "MAMAKO" : true, "MARINE" : true, "MARIO" : true, "MEGAMAN" : true, "MEGUMI" : true, "METALGEAR" : true, "MGRR" : true, "MIKO" : true, "MISC" : true, "MISSKOBAYASHI" : true, "MRKRABS" : true, "MYTHRA" : true, "NENE" : true, "NERO" : true, "NIJISANJI" : true, "NINGGUANG" : true, "NINTENDO" : true, "NOELLE" : true, "NONNONBIYORI" : true, "NYANNERS" : true, "OKAYU" : true, "OLLIE" : true, "ONEPIECE" : true, "PADORU" : true, "PAIMON" : true, "PEKORA" : true, "PERSONA4" : true, "PERSONA5" : true, "PETRA" : true, "PRINCESSCONNECT" : true, "QIQI" : true, "REM" : true, "RENGE" : true, "REZERO" : true, "RICK" : true, "SANS" : true, "SHION" : true, "SIMPSONS" : true, "SMASH" : true, "SMILINGFRIENDS" : true, "SONIC" : true, "SPIDERMAN" : true, "SPONGEBOB" : true, "TAMAMO" : true, "VEIBAE" : true, "VTUBE" : true, "VTUBER" : true, "WALKURE" : true, "WATAME" : true, "WATAMEN" : true, "WATATEN" : true, "WATSON" : true, "XIANGLING" : true, "YAGOO" : true, "YAKUZA" : true, "ZELDA" : true };
+        var buttonStates = { "all" : true, "ABBY" : true, "AETHER" : true, "AIR88" : true, "ALWAYSSUNNY" : true, "AMBER" : true, "AMONGUS" : true, "ANHKA" : true, "ANIME" : true, "ARA" : true, "AVGN" : true, "AYAME" : true, "BARBARA" : true, "BEIDOU" : true, "BIRB" : true, "BONK" : true, "BOTW" : true, "BRUH" : true, "CASTLEVANIA" : true, "CHRONOTRIGGER" : true, "COCO" : true, "DARKSOULS" : true, "DMC" : true, "DUALIPA" : true, "EULA" : true, "FARMGO" : true, "FATE" : true, "FILTHYFRANK" : true, "FISCHL" : true, "FUBUKI" : true, "GANYU" : true, "GENSHIN" : true, "GTA" : true, "GUNS" : true, "HAACHAMA" : true, "HOLOLIVE" : true, "HOMER" : true, "HONKAIIMPACT" : true, "HORNI" : true, "INA" : true, "JOJO" : true, "JONTRON" : true, "KANNA" : true, "KAZUMA" : true, "KEQING" : true, "KLEE" : true, "KONOSUBA" : true, "KORONE" : true, "KSON" : true, "LILJON" : true, "LINK" : true, "LISA" : true, "LOFI" : true, "LUMI" : true, "LURK" : true, "MAMAKO" : true, "MARINE" : true, "MARIO" : true, "MEGAMAN" : true, "MEGUMI" : true, "METALGEAR" : true, "MGRR" : true, "MIKO" : true, "MISC" : true, "MISSKOBAYASHI" : true, "MRKRABS" : true, "MYTHRA" : true, "NENE" : true, "NERO" : true, "NIJISANJI" : true, "NINGGUANG" : true, "NINTENDO" : true, "NOELLE" : true, "NONNONBIYORI" : true, "NYANNERS" : true, "OKAYU" : true, "OLLIE" : true, "ONEPIECE" : true, "PADORU" : true, "PAIMON" : true, "PEKORA" : true, "PERSONA4" : true, "PERSONA5" : true, "PETRA" : true, "PRINCESSCONNECT" : true, "QIQI" : true, "REM" : true, "RENGE" : true, "REZERO" : true, "RICK" : true, "SANS" : true, "SHION" : true, "SIMPSONS" : true, "SMASH" : true, "SMILINGFRIENDS" : true, "SONIC" : true, "SPIDERMAN" : true, "SPONGEBOB" : true, "SUS" : true, "TAMAMO" : true, "VEIBAE" : true, "VTUBE" : true, "VTUBER" : true, "WALKURE" : true, "WATAME" : true, "WATAMEN" : true, "WATATEN" : true, "WATSON" : true, "XIANGLING" : true, "YAGOO" : true, "YAKUZA" : true, "ZELDA" : true };
         var filters = [];
 
         function toggleFilterButton(id, c) {
